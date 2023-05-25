@@ -6,3 +6,5 @@ dicho que tiene una serie de libros que forman colecciones, en cuyo caso además
 el nombre de la colección y el número que ocupa el libro en la colección. La única aclaración adicional es que
 si se trata de un libro con mas de dos autores quiere guardar el primer autor, y el nombre del segundo debe
 aparecer “y otros”.
+
+![Interfaz](prueba1.png "Interfaz")
