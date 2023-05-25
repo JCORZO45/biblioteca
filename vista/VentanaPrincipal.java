@@ -38,7 +38,7 @@ public class VentanaPrincipal extends JFrame
         this.add(miPanelResultados);
 
         //Caracteristicas de la ventana
-        this.setTitle("Telefonia");
+        this.setTitle("Libreria");
         this.setSize(820,700);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);

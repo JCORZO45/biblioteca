@@ -31,7 +31,7 @@ public class Controlador implements ActionListener
         this.libro=pPlan;
         
         this.venPrin.miPanelOperaciones.agregarOyentesBotones(this);
-        this.venPrin.miPanelResultados.mostrarResultado("App lista para usar... \nSe han creado los siguientes tipos de objetos: \nVentanaPrincipal\nTelefonia\nControlador");
+        this.venPrin.miPanelResultados.mostrarResultado("App lista para usar... \nSe han creado los siguientes tipos de objetos: \nVentanaPrincipal\nColeccion\nControlador");
     }
 
     @Override
