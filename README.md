@@ -8,3 +8,5 @@ si se trata de un libro con mas de dos autores quiere guardar el primer autor, y
 aparecer “y otros”.
 
 ![Interfaz](prueba1.png "Interfaz")
+
+![Prueba](prueba2.png "Prueba 1")

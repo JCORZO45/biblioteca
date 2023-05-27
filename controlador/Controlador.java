@@ -17,7 +17,7 @@ public class Controlador implements ActionListener
     //------------------
     private VentanaPrincipal venPrin;
    
-    private Libro libro;
+    private Libro mLibro;
     
 
     //------------------
@@ -25,10 +25,10 @@ public class Controlador implements ActionListener
     //------------------
 
     //Constructor
-    public Controlador(VentanaPrincipal pVenPrin, Libro pPlan)
+    public Controlador(VentanaPrincipal pVenPrin, Libro pMLibro)
     {
         this.venPrin = pVenPrin;
-        this.libro=pPlan;
+        this.mLibro=pMLibro;
         
         this.venPrin.miPanelOperaciones.agregarOyentesBotones(this);
         this.venPrin.miPanelResultados.mostrarResultado("App lista para usar... \nSe han creado los siguientes tipos de objetos: \nVentanaPrincipal\nColeccion\nControlador");
@@ -40,17 +40,29 @@ public class Controlador implements ActionListener
         String comando = ae.getActionCommand();
 
         //Abrir ventana Agregar vendedor
+   
   
    
 
 
 
-        if(comando.equals("glibro"))
+        if(comando.equals("glibro")){
+            mLibro.setNombreLibro(venPrin.miPanelEntradaDatos.getnombreLibro());
+            mLibro.setAutor(venPrin.miPanelEntradaDatos.getautor());
+            mLibro.setEdicion(venPrin.miPanelEntradaDatos.getedicion());
+            mLibro.seteDLujo(venPrin.miPanelEntradaDatos.getDelujo());
 
-        {
-        System.out.println("Hola");
+
+
+
+            venPrin.miPanelResultados.mostrarResultado(mLibro.toString());
+
+            
+
+        
         }
 
+    
         //Agregar vendedor
         if(comando.equals("reset"))
         {

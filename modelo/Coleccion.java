@@ -1,10 +1,11 @@
 package modelo;
 
-public class Coleccion {
-    public Coleccion(int edicion, Boolean ediciondLujo, String nombreLibro, String NombreAutor){
-        super();
-    }
+public class Coleccion extends Libro
+{
+    
     //metodos 
+    
+
    
     
 }
